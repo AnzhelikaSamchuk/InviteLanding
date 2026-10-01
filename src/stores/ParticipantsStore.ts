@@ -1,4 +1,4 @@
-import { action, computed, makeObservable, observable, runInAction } from 'mobx';
+import { action, computed, makeObservable, observable } from 'mobx';
 import { ParticipantFormService } from 'services';
 import { conferenceStore, tariffStore, toastStore } from 'stores';
 import { TARIFF_KEYS } from 'shared/constants';

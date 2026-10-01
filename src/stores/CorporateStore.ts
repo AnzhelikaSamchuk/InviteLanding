@@ -1,8 +1,8 @@
 import { action, makeObservable, observable } from 'mobx';
+import { CorporateParticipantService } from 'services';
 import { conferenceStore, toastStore } from 'stores';
 import { CorporateFormModes } from 'shared/enums/formModeEnums';
 import { CorporateDetailsModel, CorporateRegistrationModel } from 'shared/models';
-import { CorporateParticipantService } from 'services';
 
 class CorporateStore {
   public isWaiting = false;

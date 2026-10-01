@@ -49,7 +49,7 @@ const RegistrationForm = () => {
         onSubmit={() => preSpeakerStore.postPreSpeaker()}
         enableReinitialize={true}
         validationSchema={validationSchema}>
-        {({ values, errors, touched, handleBlur, handleSubmit, setFieldValue }) => {
+        {({ values, errors, touched, handleBlur, setFieldValue }) => {
           const handleChangeName = (e: React.ChangeEvent<any>) => {
             preSpeakerStore.preSpeaker.setName(e.target.value);
             setFieldValue('name', e.target.value);

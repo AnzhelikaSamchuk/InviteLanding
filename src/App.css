@@ -1,0 +1,68 @@
+.app {
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d9dbe4;
+  border-radius: 5px;
+}
+
+.PhoneInput {
+  margin-top: 32px !important;
+  width: 100%;
+  font-size: 16px;
+}
+
+.PhoneInput p {
+  font-size: 10px;
+}
+
+.PhoneInput .MuiFormHelperText-root {
+  font-size: 0.7rem;
+}
+
+.gradient-background {
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: Gradient;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #eeeeee 8%, #8df2c8 18%, #eeeeee 33%);
+  background-size: 1000px 640px;
+  color: #8a8ba7 !important;
+  position: relative;
+  cursor: auto;
+}
+
+.gradient-paused {
+  animation-play-state: paused;
+  animation-name: none;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: -30vw 0;
+  }
+  100% {
+    background-position: 70vw 0;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
